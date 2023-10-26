@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ICuts Booking</title>
+
+
+<style>
+a:link, a:visited {
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+* {
+  box-sizing: border-box;
+}
+  
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 10%;
+  background-color: black;
+  color: white;
+  padding: 15px 15px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 10px;
+}
+body {
+  font-family: Kiwi Maru;
+  background-color: black;
+  color: white;
+}
+
+
+header {
+  margin-top: 10px;
+  background-image: black;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+nav {
+  height: 400px;
+  float: left;
+  width: 20%;
+  background-image: black;
+  padding: 20px;
+  font-size: 30px;
+}
+
+footer {
+  margin-bottom: 10px;
+  background-image: black;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: black;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <a href="C:\Users\cgorj\Documents\I-Cuts/iCuts Homepage.html">
+  <img src="C:\Users\cgorj\Documents\I-Cuts\ICuts.png" width="300" height="300" alt="ICuts Logo" style="left">  </a>
+  </img>
+
+  <h1> Bookings </h1>
+  <h1 style="center: 10px;"> </h1>
+
+
+
+</header>
+
+<section>
+
+
+<article>
+    <form action="C:\Users\cgorj\Documents\I-Cuts/ICuts Tracking Page.html" method="get">
+      <form onsubmit="return validateForm()">
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" name="first_name" pattern="[A-Za-z]+" required>
+      <br><br>
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" name="last_name" pattern="[A-Za-z]+" required>
+      <br><br>
+      <label for="Pno">Phone number:</label>
+      <input type="tel" id="Pno" name="Pno" pattern= "[0-9]{10}" title="XXX-XX-XXX" required>
+      <br><br>
+      <label for="type">Type of Cut:</label>
+      <select required>
+  <option value="">Select an option</option>
+  <option value="option1">Men's Haircut</option>
+  <option value="option2">Women's Haircut</option>
+  <option value="option3">Pet Haircut</option>
+</select>
+      <br><br>
+      <label for="Barb">Barber/Barbershop:</label>
+      <input type="text" id="Barb" name="Barb" required>
+      <br><br>
+      <label for="Cut">What you need cut?:</label>
+      <input type="text" id="cut" name="cut" required>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+    </form>
+    <script>
+      function validateForm() {
+        var firstName = document.getElementById("first_name").value;
+        var lastName = document.getElementById("last_name").value;
+        var phonenumber = document.getElementById("Pno").value;
+        var typeofcut = document.getElementById("type").value;
+        var barber/Barbershop = document.getElementById("Barb").value;
+        var whatyouneedcut = document.getElementById("Cut").value;
+
+        if (firstName.length === 0) {
+          alert("First name is required.");
+          return false;
+        }
+
+        if (lastName.length === 0) {
+          alert("Last name is required.");
+          return false;
+        }
+
+
+
+        // Submit form
+        return true;
+      }
+    </script>
+
+    </form>
+    </article>
+
+    </section>
+
+
+    </body>
+    <footer>
+      <p>Designed by Cyrus</p>
+    </footer>
+    </html>
